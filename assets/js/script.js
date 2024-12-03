@@ -72,7 +72,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Samiksha Kobal";
+            document.title = "Samiksha Kobal";
             //$("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {

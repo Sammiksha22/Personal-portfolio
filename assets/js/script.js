@@ -37,34 +37,47 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
+        event.preventDefault(); // Prevent default form submission
+    
+        // Form Data Collection
+        const formData = new FormData(document.getElementById("contact-form"));
+        formData.append("access_key", "d66fc9ce-2142-452f-8f83-768a7ef7a9d9"); // Your Web3Forms access key
+    
+        // Sending the form data to Web3Forms
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                console.log("Form Submitted Successfully", data);
+                document.getElementById("contact-form").reset(); // Reset the form
+                alert("Form Submitted Successfully!");
+            } else {
+                console.error("Form Submission Failed", data);
+                alert("Form Submission Failed! Try Again.");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+        });
     });
-    // <!-- emailjs to mail contact form data -->
+    
 
 });
 
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | Samiksha Kobal";
+            //$("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            document.title = "Samiksha Kobal";
+           // $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });
 

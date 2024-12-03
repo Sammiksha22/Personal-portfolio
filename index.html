@@ -15,7 +15,7 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicon -->
-  <link id='favicon' rel="shortcut icon" href="./assets/images/photos/S.png" type="image/x-png">
+  <link id='favicon' rel="shortcut icon" href="./assets/images/photos/letter-s.png" type="image/x-png">
   <title>Samiksha Kobal</title>
 </head>
 
@@ -28,7 +28,37 @@
 
   <!-- navbar starts -->
   <header>
-    <a href="/" class="logo"><i class="fab fa-node-js"></i> Sam</a>
+    <!-- <a href="/" class="logo"><i class="fa fa-text">S</i> Sam</a> -->
+    <a href="/" class="logo">
+      <i class="circle-logo">S</i>Sam</a>
+
+    <style>
+      .logo {
+        text-decoration: sienna;
+        font-family: Roboto, sans-serif;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .circle-logo {
+        display: inline-block;
+        width: 38px;
+        /* Adjust size as needed */
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        background-color: #9645b5;
+        /* Circle background color */
+        color: white;
+        /* Text color */
+        font-weight: bold;
+        border-radius: 50%;
+        /* Makes it a perfect circle */
+        margin-right: 0px;
+        /* Space between the circle and text */
+      }
+    </style>
 
     <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
@@ -74,8 +104,9 @@
         </ul>
       </div>
     </div>
+
     <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/photos/Myself2.jpg" alt="">
+      <img draggable="false" class="tilt" src="./assets/images/photos/avatr pic.jpg" alt="">
     </div>
   </section>
   <!-- hero section ends -->
@@ -88,16 +119,16 @@
     <div class="row">
 
       <div class="image">
-        <img draggable="false" class="tilt" src="/assets/images/photos/Myself2.jpg" alt="">
+        <img draggable="false" class="tilt" src="/assets/images/photos/Myself.jpg" alt="">
       </div>
       <div class="content">
         <h3>Hello, I'm Samiksha</h3>
         <span class="tag">Developer</span>
 
         <p>I am a developer based in Mumbai, India.<br>
-          I am an EXTC undergraduate from Mumbai University.<br> 
-          I am focused on enhancing my coding skills and building impactful websites,    
-          specialize in web development with HTML, CSS, JavaScript, 
+          I am an EXTC undergraduate from Mumbai University.<br>
+          I am focused on enhancing my coding skills and building impactful websites,
+          specialize in web development with HTML, CSS, JavaScript,
           and have experience in Python, Java, SQL, and Bootstrap.<br>
           Passionate about technology and innovation.<br>
           Working for myself to improve my skills.

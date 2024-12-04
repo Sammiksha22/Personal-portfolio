@@ -1,26 +1,26 @@
 [
   {
-    "name": "HygieneX - A next Gen Smart Toilet",
+    "name":"HygieneX",
     "desc": " Utilized AWS Cloud, Fast2SMS, and Arduino IDE with JavaScript and C++, integrating Arduino Uno and NodeMCU for seamless operation.",
-    "image": "notystackandroid",
+    "image": "frontpg hygienex",
     "category": "University Projects",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/notystack-android"
+      "view": "https://github.com/Sammiksha22/HygieneX",
+      "code": "https://github.com/Sammiksha22/HygieneX"
     }
   },
   {
-    "name": "Vimal",
-    "desc": "All in one SPPU Engineering resources. Built using Java, XML and Firebase.",
-    "image": "sppuprepandroid",
-    "category": "android",
+    "name": "Personal portfolio",
+    "desc": "This is my personal portfolio. Build using HTML,CSS,JS",
+    "image": "frontpg portfolio",
+    "category": "basicweb",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/sppu-prep-android"
+      "view": "https://samikshakobal.netlify.app/",
+      "code": "https://github.com/Sammiksha22/Personal-portfolio"
     }
   },
   {
-    "name": "Amaan",
+    "name": "y",
     "desc": "Native android app built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
     "image": "newsboxandroid",
     "category": "android",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "name": "Manas",
+    "name": "z",
     "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
     "image": "weatherlyandroid",
     "category": "android",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "name": "Aman",
+    "name": "p",
     "desc": "Full-Stack Instagram clone built using MERN stack and realtime chat with the help of socket.iO",
     "image": "instagrammern",
     "category": "mern",
@@ -50,7 +50,7 @@
     }
   },
   {
-    "name": "Harsh",
+    "name": "r",
     "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
     "image": "flipkartmern",
     "category": "mern",
